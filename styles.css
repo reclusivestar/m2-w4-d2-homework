@@ -1,0 +1,88 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+#leftside {
+    background-color: rgb(77, 192, 154); /* Green */
+    min-height: 100vh;
+}
+
+#rightside {
+    background-color: rgb(238, 226, 192); /* Yellow */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.container-fluid {
+    position: relative;
+    min-height: 100vh; /* Ensure full viewport height is covered */
+}
+
+.semi-transparent-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Take the full width of the parent */
+    max-width: 900px; /* Limit the maximum width */
+    margin: 20px auto;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 2.75em;
+    color: rgb(216, 150, 7);
+}
+
+main h2 {
+    color: rgb(60, 190, 160);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.post {
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px solid rgba(83, 78, 58, 0.6);
+    border-radius: 0.5em;
+    background-color: rgba(255, 255, 255, 0.95);
+    display: flex;
+    align-items: flex-start;
+    max-width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.profile-image {
+    cursor: pointer;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.floating-box {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+    transform: translate(20%, -60%);
+    width: 20%;
+}
+
+.show {
+    display: block !important;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
